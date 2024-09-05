@@ -16,14 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Lisa Luijkman
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  rood
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
- 
+  surface plane
 </details>
 
 
@@ -40,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="images/eerste-pagina.png" width="375px" alt="dit is een bedrijf van studenten die bedrijven adviezen geven en onderzoeken uitvoeren">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="images/tweede-pagina.png" width="375px" alt="hier kan je een quote aanvragen">
  
 </details>
 
