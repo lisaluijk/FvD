@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="images/eerste-pagina.png" width="375px" alt="dit is een bedrijf van studenten die bedrijven adviezen geven en onderzoeken uitvoeren">
+  <img src="readme-images/eerste-pagina.png" width="375px" alt="dit is een bedrijf van studenten die bedrijven adviezen geven en onderzoeken uitvoeren">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="images/tweede-pagina.png" width="375px" alt="hier kan je een quote aanvragen">
+  <img src="readme-images/tweede-pagina.png" width="375px" alt="hier kan je een quote aanvragen">
  
 </details>
 
@@ -56,6 +56,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  
 
 </details>
 
@@ -67,7 +68,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
