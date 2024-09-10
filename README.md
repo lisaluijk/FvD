@@ -74,6 +74,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/menu.jpg" width="375px" alt="breakdown van het menu">
+  <img src="readme-images/breakdownschets-secties.jpg" width="375px" alt="breakdown van html onderdelen">
 
 <!--   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
@@ -111,6 +112,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - nog een punt
   - ...
 
+
+  <img src="readme-images/aantekeningen-hoorcollege.jpg" width="375px" alt="aantekeningen hoorcollege toegankelijkheid">
 </details>
 
 
