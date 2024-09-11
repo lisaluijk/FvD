@@ -56,6 +56,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  Ik merkte dat ik het lastig vind de screenreader te gebruiken maar dat dit nog meer werd versterkt door mijn gekozen website. De website crasht soms waardoor ik dan niet verder kan en alleen een wit scherm zie. De linkjes zijn soms goed gelabeld maar als er een foto wordt gebruikt als link, bijvoorbeeld bij de socialmedia icoontjes hoor je alleen: "link". Ook hebben ze een lijst met bedrijven waarmee ze samenwerken waar je ook alleen maar een logo ziet zonder tekst. In de screenreader hoor je dan ook: "link logo" dit is dus totaal niet toegankelijk omdat je niet alleen niet weet waar je heen gaat maar ook nog op een hele andere website terecht komt. 
+  Bij het doorlopen van de headings loop ik de hele tijd vast en kom ik er niet doorheen. De headings die ik kan horen zijn op zich prima maar niet altijd even logisch. 
   
 
 </details>
