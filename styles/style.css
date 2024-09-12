@@ -3,6 +3,8 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -19,6 +21,13 @@
 	--color-background:#eee;
 }
 
+@font-face {
+	font-family: ESKlarheitKurrent;
+	src: url('/fonts/ESKlarheitKurrent-Regular.ttf'), weight normal ;
+	src: url('/fonts/ESKlarheitKurrent-Medium.ttf'), weight medium;
+	src: url('/fonts/ESKlarheitKurrent-Bold.ttf'), weight bold;
+	src: url('/fonts/ESKlarheitKurrent-Extralight.ttf'), weight light;
+  }
 
 
 
@@ -29,3 +38,7 @@
 
 /* jouw code */
 
+* {
+	font-family: ESKlarheitKurrent, Arial, Helvetica, sans-serif;
+	color: #042fab; 
+}

@@ -59,6 +59,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ik merkte dat ik het lastig vind de screenreader te gebruiken maar dat dit nog meer werd versterkt door mijn gekozen website. De website crasht soms waardoor ik dan niet verder kan en alleen een wit scherm zie. De linkjes zijn soms goed gelabeld maar als er een foto wordt gebruikt als link, bijvoorbeeld bij de socialmedia icoontjes hoor je alleen: "link". Ook hebben ze een lijst met bedrijven waarmee ze samenwerken waar je ook alleen maar een logo ziet zonder tekst. In de screenreader hoor je dan ook: "link logo" dit is dus totaal niet toegankelijk omdat je niet alleen niet weet waar je heen gaat maar ook nog op een hele andere website terecht komt. 
   Bij het doorlopen van de headings loop ik de hele tijd vast en kom ik er niet doorheen. De headings die ik kan horen zijn op zich prima maar niet altijd even logisch. 
+
+  <img src="readme-images/wcag-1.jpg" width="375px" alt="ingevulde wcag test">
+  <img src="readme-images/wcag-2.jpg" width="375px" alt="ingevulde wcag test">
+  <img src="readme-images/wcag-3.jpg" width="375px" alt="ingevulde wcag test">
+  <img src="readme-images/wcag-4.jpg" width="375px" alt="ingevulde wcag test">
+  <img src="readme-images/wcag-5.jpg" width="375px" alt="ingevulde wcag test">
+
+Uit de wcag checklist kwamen de volgende punten:
+- de links hebben nog geen goed (aria)label
+- menu wilt niet open als je erdoorheen tabt
+- headings zijn niet overal logisch
+- alt tekst moet heel veel beter want die ontbreekt
+- prefers-reduced-motion werkt helemaal niet
+- contrast is bijna overal goed
+
   
 
 </details>
