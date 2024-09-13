@@ -1,3 +1,90 @@
 header {
-    background-color: #F8F6F2;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    text-transform: uppercase;
+	font-size:14px;
+
+    display: grid;
+    place-items:  center;
+    border: none;
+
+    
+}
+
+button span {
+    display: block;
+    width: 7em;
+    height: 50px;
+   
+
+    border: 1.5px solid var(--color-text);
+	background-color:var(--color-white);
+    grid-row-start: 1;
+    grid-column-start: 1;
+  
+    transition: .5s;
+	z-index: 2;
+}
+
+button span:nth-child(1) {
+    rotate: 5deg;
+  }
+
+button span:nth-child(2) {
+    rotate: -5deg;
+}
+
+button span:nth-child(3) {
+    
+    place-items:  center;
+}
+
+
+header ul {
+    position: absolute;
+    background-color: var(--color-background);
+    list-style: none;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+header li {
+    
+    align-self: center;
+    width: 100%;
+   
+}
+
+header li:last-of-type a {
+    border-bottom: 2px solid var(--color-text);
+}
+
+header li a {
+    border-top: 2px solid var(--color-text);
+}
+
+header a {
+    font-weight: light;
+    
+    text-decoration:none;
+    text-transform: uppercase;
+	font-size:29px;
+    padding: 0.7em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+   
 }

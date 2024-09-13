@@ -17,8 +17,10 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#042FAB;
+	--color-background:#F8F6F2;
+	--color-accent: #FFC233;
+	--color-white: #FFF;
 }
 
 @font-face {
@@ -40,5 +42,7 @@
 
 * {
 	font-family: ESKlarheitKurrent, Arial, Helvetica, sans-serif;
-	color: #042fab; 
+	color:var(--color-text);
 }
+
+
