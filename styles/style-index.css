@@ -1,90 +1,83 @@
 header {
     background-color: var(--color-background);
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header button {
+/* stylen button */
+nav button {
     text-transform: uppercase;
 	font-size:14px;
 
     display: grid;
     place-items:  center;
     border: none;
-
-    
 }
 
-button span {
+nav button span {
+	background-color:var(--color-white);
+    border: 1.5px solid var(--color-text);
+
     display: block;
     width: 7em;
-    height: 50px;
-   
-
-    border: 1.5px solid var(--color-text);
-	background-color:var(--color-white);
+    height: 3.5em;
+    
+    z-index: 2;
     grid-row-start: 1;
     grid-column-start: 1;
-  
-    transition: .5s;
-	z-index: 2;
 }
 
-button span:nth-child(1) {
+nav button span:nth-child(1) {
     rotate: 5deg;
   }
 
-button span:nth-child(2) {
+nav button span:nth-child(2) {
     rotate: -5deg;
 }
 
-button span:nth-child(3) {
-    
-    place-items:  center;
+nav button span:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-header ul {
-    position: absolute;
+/* hamburger menu */
+nav ul {
     background-color: var(--color-background);
     list-style: none;
+    transition:1s;
+
+    position: absolute;
     inset: 0;
+    translate: 0 100%;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    
-    
-    
 }
 
-header li {
-    
-    align-self: center;
+nav li {
+    box-shadow: 0px -10px 50px rgb(218, 218, 218);
     width: 100%;
-   
-}
-
-header li:last-of-type a {
-    border-bottom: 2px solid var(--color-text);
-}
-
-header li a {
     border-top: 2px solid var(--color-text);
 }
 
-header a {
+nav a {
+    font-size:29px;
     font-weight: light;
-    
     text-decoration:none;
     text-transform: uppercase;
-	font-size:29px;
-    padding: 0.7em;
-    width: 100%;
+    
     display: flex;
     justify-content: center;
-    
-   
+
+    padding: 0.7em;
+    width: 100%;
+}
+
+nav.toonMenu ul {
+    translate:  0%;
 }
