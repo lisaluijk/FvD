@@ -128,10 +128,10 @@ Uit de wcag checklist kwamen de volgende punten:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - punt 1: navigatie bar werkt niet met sticky en fixed --> de ul uit de header halen
+  - punt 2: foto van logo --> mag met img maar dan lege alt of met before (doe het wel consistent)
+  - punt 3: hoe maak ik de bewegende tekst? --> bewegende tekst met marquee, maar dan met display block enzo en reduces motion
+ 
 
 
   <img src="readme-images/aantekeningen-hoorcollege.jpg" width="375px" alt="aantekeningen hoorcollege toegankelijkheid">
