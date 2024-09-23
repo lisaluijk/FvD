@@ -29,6 +29,7 @@ img {
 	--color-accent: #FFC233;
 	--color-white: #FFF;
 	--color-black: #000;
+    --color-dark-text: #00063F;
 }
 
 @font-face {
@@ -81,7 +82,20 @@ h2 {
 h3 {
     font-size: 35px;
     line-height: 0.99999;
-    padding: 1em 0;
+    padding: 0.5em 0;
+}
+
+h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    
+}
+
+p {
+    font-size: 14px;
+    color: var(--color-dark-text);
+    font-weight: 500;
 }
 
 header {

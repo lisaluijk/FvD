@@ -163,9 +163,11 @@ Uit de wcag checklist kwamen de volgende punten:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - punt 1: margin -> negatief
+  - punt 2: background image svg -> aparte file aanmaken
+  - nog een punt : discover in de article -> link maken en dan met java alles klikbaar maken
+  - html controleren -> alle sections moeten een h2 hebben, de ul van de nav mag tussen de header en main in, veel van mijn articles zijn geen articles (alleen dingen die los kunnen staan zijn articles)
+  
 - ...
 
 </details>
