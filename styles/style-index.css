@@ -205,16 +205,33 @@ section:nth-child(4) {
     padding: 1em;
 }
 
-section:nth-child(4) article{
-    display: grid;
+section:nth-child(4) > ul {
+    
+	display: flex;
+	overflow-x: auto;
+	
+	scroll-snap-type: inline mandatory;
+	scroll-behavior: smooth;
+}
+
+section:nth-child(4) > ul::-webkit-scrollbar {
+    display: none;
+}
+    
+section:nth-child(4) > ul >li{
+    display: flex;
     background-color: var(--color-background);
     background-image: url(../images/bg.svg);
     background-size: cover;
+
+    flex-shrink:0;
+	scroll-snap-align: center;
 
     width: 85%;
     height: 60%;
     padding: 2em;
     margin: 0.35em;
+    gap: 0.75em;
 }
 
 section:nth-child(4) article p {
@@ -223,11 +240,31 @@ section:nth-child(4) article p {
     padding: 0.3em 0;
 }
 
-section:nth-child(4) article  ul li {
+section:nth-child(4) article ul li {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 400;
+}
 
+section:nth-child(4) article a {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 6em;
+    
+}
+
+section:nth-child(4) article a::before{
+    content: url(../images/arrow.svg);
+    content: url(../images/arrow.svg);
+    content: url(../images/arrow.svg);
+}
+
+section:nth-child(4) article a::after{
+    content: url(../images/arrow.svg);
+    content: url(../images/arrow.svg);
+    content: url(../images/arrow.svg);
 }
 
 section:nth-child(4) > p {
@@ -237,8 +274,6 @@ section:nth-child(4) > p {
     color: var(--color-text);
     padding: 1em 0 8em;
     border-bottom: 2px solid var(--color-text);
-
-
 }
 
 section:nth-child(4) marquee {
@@ -340,19 +375,26 @@ section:nth-child(7) {
 
 section:nth-child(7) article {
     border-top: 1px solid var(--color-text);
+    padding: 2.5em 0;
+    display: grid;
 }
 
-section:nth-child(7) article a h3 {
-    color: hotpink;
-    text-decoration: none;
-    order: 3;
-}
-
-section:nth-child(7) article a p:nth-child(1) {
-    color: var(--color-accent);
+section:nth-child(7) article h3 {
+    font-size: 15px;
+    font-weight: 400;
     text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+
+
+section:nth-child(7) article p:nth-child(1) {
+    color: hotpink;
     
 }
+
+
 
 
 
