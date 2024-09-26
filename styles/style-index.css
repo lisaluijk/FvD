@@ -201,7 +201,7 @@ section:nth-child(4) button {
     fill: none;
 }
 
-section:nth-child(4) > button svg {
+section:nth-child(4) button:nth-of-type(1) svg {
     rotate: 180deg;
 }
 
@@ -332,7 +332,6 @@ section:nth-child(6) li {
     display: grid;
     gap: 1em;
     justify-items: center;
-    
 }
 
 section:nth-child(6) p {
