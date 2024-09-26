@@ -108,7 +108,7 @@ header {
     z-index: 100;
 	position: sticky;
   	top: 0;
-	z-index: 4;
+	z-index: 100;
 	font-weight: 200;
 
 	background-color: var(--color-background-trans);
@@ -123,6 +123,7 @@ nav button {
     display: grid;
     place-items:  center;
     border: none;
+
 }
 
 nav button span {
@@ -157,7 +158,6 @@ section:nth-child(1) ul {
     background-color: var(--color-background);
     transition:1s;
     
-
     position: fixed;
     inset: 0;
     translate: 0 100%;
@@ -166,6 +166,7 @@ section:nth-child(1) ul {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    z-index: 99;
 }
 
 section:nth-child(1) ul li {
