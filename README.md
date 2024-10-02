@@ -212,9 +212,9 @@ Uit de wcag checklist kwamen de volgende punten:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - punt 1 -> fancy carrousel, codepen
+  - punt 2 -> order, snappen student assistenten ook niet
+  - punt 3 -> html checken, geen styling in svg, geen lege alt (of toch wel?) 
   - ...
 
 </details>

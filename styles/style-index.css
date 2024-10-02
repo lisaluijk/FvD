@@ -1,64 +1,67 @@
+/****************/
+/* styling section 1 */
+/****************/
 
-section:nth-child(2) {
+/* tekst */
+section:nth-of-type(2) {
     background-color: var(--color-background);
+    
     padding: 1em;
+
     position: relative;
     overflow: hidden;
 }
 
-section:nth-child(2) h2, section:nth-child(2) h2 span {
+section:nth-of-type(2) :is(h2, h2 span) {
     font-size: 38px;
-    padding-right: 25%;
-    padding: 0.5em 20% 1em 0;
-    line-height: 0.99999;
     font-weight: 200;
+    line-height: 0.99999;
     text-transform: none;
-    border: none;
 
-    
+    border: none;
+    padding: 0.5em 20% 1em 0;
 }
 
-/* werkt niet :( */
-section:nth-child(2) span {
-    position: static;
-    z-index: 10;
+section:nth-of-type(2) span {
     position: relative;
     z-index: 1;
 }
 
-section:nth-child(2) li {
+section:nth-of-type(2) li {
     color: var(--color-black);
     text-transform: uppercase;
 
     padding: 0.2em 0;
 }
 
-section:nth-child(2) a {
-    position: relative;
-    text-transform: uppercase;
-	font-size: 13px;
-    color: var(--color-accent);
-
-    text-decoration: none;
-    background-color:var(--color-white);
-    border: 1.5px solid var(--color-accent);
-
-    display: inline-block;
-    padding: 0.9em 2em;
-    margin: 5em 0;
-   
-    
-    transition: 0.5s;
-}
-
-section:nth-child(2) div {
+/* div omdat anders z-index niet werkt */
+/* link */
+section:nth-of-type(2) div {
     position: relative;
     z-index: 1;
 }
 
+section:nth-of-type(2) div a {
+    font-size: 13px;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    background-color:var(--color-white);
+    border: 1.5px solid var(--color-accent);
+    
+    position: relative;
+    display: inline-block;
+    padding: 0.9em 2em;
+    margin: 5em 0;
+   
+    transition: 0.5s;
+}
 
-section:nth-child(2) a::before {
+section:nth-of-type(2) a::before,
+section:nth-of-type(2) a::after {
     content: "";
+
     background-color: var(--color-white);
     border: 1.5px solid var(--color-accent);
 
@@ -67,132 +70,104 @@ section:nth-child(2) a::before {
     height: 3.3em;
     top: 0;
     left: 0;
+    
+    z-index: -2;
+    transition: 0.5s;
+}
+
+section:nth-of-type(2) a::before {
     rotate: 4deg;
-    z-index: -2;
-
-    transition: 0.5s;
 }
 
-section:nth-child(2) a::after {
-    content: "";
-    background-color: var(--color-white);
-    border: 1.5px solid var(--color-accent);
-
-    position: absolute;
-    width: 13.8em;
-    height: 3.3em;
-    top: 0;
-    left: 0;
+section:nth-of-type(2) a::after {
     rotate: -4deg;
-    z-index: -2;
-
-    transition: 0.5s;
 }
-/* ik heb dit geprobeerd te doen met ":is(a:active, a:active::before)" maar dit wilde niet werken, met andere elementen zoals h2 werkt het echter wel */
-section:nth-child(2) :is(a:active, a:active::before) {
+
+section:nth-of-type(2) :is(a:active, a:hover) {
     color: var(--color-white);
     background-color:var(--color-accent);
 }
 
-section:nth-child(2) a:active::before {
-    color: var(--color-white);
-    background-color:var(--color-accent);
-    rotate: none;
-}
-
-section:nth-child(2) a:active::after {
-    color: var(--color-white);
+section:nth-of-type(2) a:hover::before,
+section:nth-of-type(2) a:hover::after,
+section:nth-of-type(2) a:active::before,
+section:nth-of-type(2) a:active::after {
     background-color:var(--color-accent);
     rotate: none;
 }
 
-section:nth-child(2) img {
-    width: 24%;
-    aspect-ratio: 1/1.2;
-    position: absolute;
-    opacity: 0;
-}
-
-section:nth-child(2) img:nth-of-type(1) {
-    top:100%;
-    left:10%;
-}
-
-section:nth-child(2) img:nth-of-type(2) {
-    top:100%;
-    left:30%;
-}
-
-section:nth-child(2) img:nth-of-type(3) {
-    top:100%;
-    left:43%;
-}
-
-section:nth-child(2) img:nth-of-type(4) {
-    top:100%;
-    left:65%;
-}
-
+/* flying images */
 @keyframes flying-image {
     0% {
         transform: translateY(0);
     }
-
     7% {
         opacity: 1;
         transform: translateY(-15em);
     }
-
     42% {
         opacity: 1;
         transform: translateY(-30em);
     }
-
     50% {
         opacity: 0;
         transform: translateY(-45em);
     }
-
 }
 
-section:nth-child(2) img {
+section:nth-of-type(2) > img {
+    width: 23%;
+    aspect-ratio: 1/1.2;
+    
+    position: absolute;
+    opacity: 0;
+
     animation-name: flying-image;
     animation-iteration-count:infinite;
     animation-timing-function:linear; 
     animation-duration: 8s;
 }
 
-section:nth-child(2) img:nth-of-type(1) {
-    
+/* vertraging en positie */
+section:nth-of-type(2) img:nth-of-type(1) {
+    top:100%;
+    left:3%;
 }
 
-section:nth-child(2) img:nth-of-type(2) {
+section:nth-of-type(2) img:nth-of-type(2) {
+    top:100%;
+    left:26%;
     animation-delay: 6s;
 }
 
-section:nth-child(2) img:nth-of-type(3) {
+section:nth-of-type(2) img:nth-of-type(3) {
+    top:100%;
+    left:50%;
     animation-delay: 1s;
 }
 
-section:nth-child(2) img:nth-of-type(4) {
+section:nth-of-type(2) img:nth-of-type(4) {
+    top:100%;
+    left:73%;
     animation-delay: 4s;
 }
 
+/****************/
+/* styling section 2 */
+/****************/
 
-
-
-section:nth-child(3) {
+section:nth-of-type(3) {
     padding: 1em;
 }
 
-section:nth-child(3) p {
-    text-transform: uppercase;
+section:nth-of-type(3) > p {
     font-weight: 400;
+    text-transform: uppercase;
 
     padding: 1em 0 2em;
 }
 
-section:nth-child(3) ul li {
+section:nth-of-type(3) > ul li {
     font-size: 35px;
     font-weight: 200;
     text-align: center;
@@ -204,145 +179,179 @@ section:nth-child(3) ul li {
     margin: 0.3em 0 0em;
 }
 
+/*********************/
+/* styling section 3 */
+/*********************/
 
-
-section:nth-child(4) {
+section:nth-of-type(4) {
     padding: 1em;
 }
 
-section:nth-child(4) button {
+/* styling pijltjes */
+section:nth-of-type(4) button {
     appearance: none;
     border: none;
-    background-color: var(--color-white);
     fill: none;
-}
 
-section:nth-child(4) button:nth-of-type(1) svg {
-    rotate: 180deg;
-}
-
-section:nth-child(4) > ul {
+    background-color: var(--color-white);
     
+    display: block;
+    position: relative;
+    left: 80%;
+}
+
+section:nth-of-type(4) button svg {
+    width: 5em;
+    height: 2.5em;
+}
+
+section:nth-of-type(4) button:first-of-type svg {
+    rotate: 180deg;
+    opacity: 50%;
+}
+
+/* styling carousel */
+section:nth-of-type(4) > ul {
 	display: flex;
 	overflow-x: auto;
 	
-	scroll-snap-type: inline mandatory;
 	scroll-behavior: smooth;
 }
 
-section:nth-child(4) > ul::-webkit-scrollbar {
+section:nth-of-type(4) > ul::-webkit-scrollbar {
     display: none;
 }
     
-section:nth-child(4) > ul >li{
-    display: flex;
+section:nth-of-type(4) > ul > li{
     background-color: var(--color-background);
     background-image: url(../images/bg.svg);
     background-size: cover;
 
-    flex-shrink:0;
 	scroll-snap-align: center;
-
-    width: 85%;
-    height: 60%;
+    
+    flex-shrink:0;
+    flex-basis: 85%;
+    height: 25em;
+    
     padding: 2em;
-    margin: 0.35em;
-    gap: 0.75em;
+    margin: 2em 0.35em;
+    gap: 1em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-section:nth-child(4) article p {
+section:nth-of-type(4) > ul li > p {
     color: var(--color-text);
     font-weight: 700;
-    padding: 0.3em 0;
 }
 
-section:nth-child(4) article ul li {
+section:nth-of-type(4) > ul li > ul > li {
     font-size: 12px;
-    text-transform: uppercase;
     font-weight: 400;
-}
-
-section:nth-child(4) article a {
-    font-size: 12px;
     text-transform: uppercase;
+}
+
+section:nth-of-type(4) > ul li > a {
+    font-size: 12px;
     font-weight: 500;
+    text-transform: uppercase;
     text-decoration: none;
-    padding-top: 6em;
-    
 }
 
-section:nth-child(4) article a::before{
+section:nth-of-type(4) > ul li a::before,
+section:nth-of-type(4) > ul li a::after {
     content: url(../images/arrow.svg);
-    content: url(../images/arrow.svg);
-    content: url(../images/arrow.svg);
+    padding: 0.2em;
 }
 
-section:nth-child(4) article a::after{
-    content: url(../images/arrow.svg);
-    content: url(../images/arrow.svg);
-    content: url(../images/arrow.svg);
-}
-
-section:nth-child(4) > p {
+/* andere tekst */
+section:nth-of-type(4) > p {
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
     color: var(--color-text);
+    
     padding: 1em 0 8em;
     border-bottom: 2px solid var(--color-text);
 }
 
-section:nth-child(4) marquee {
+section:nth-of-type(4) marquee {
     font-size: 60px;
     font-weight: 200;
+    
     padding: 0.25em 0 0;
     margin: 0 calc(-.35rem - .875rem);
 }
 
-section:nth-child(5) {
+/* lelijke css omdat ik marquee gebruik maar wel wil dat reduced motion werkt */
+section:nth-of-type(4) p:last-of-type {
+    font-size: 30px;
+    font-weight: 200;
+
+    padding: 0.25em 0 0;
+    border-bottom: none;
+
+    display: none;
+}
+
+/*********************/
+/* styling section 4 */
+/*********************/
+
+section:nth-of-type(5) {
     padding: 1em;
 }
 
-section:nth-child(5) h4 {
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    rotate: 180deg;
-}
-
-section:nth-child(5) ul {
+section:nth-of-type(5) ul {
     margin: 4em 0;
 }
 
-section:nth-child(5) li img {
+section:nth-of-type(5) ul li a {
+    text-decoration: none;
+    
+    display: flex;
+    gap: 1.4em;
+    margin: 1.5em 0;
+}
+
+section:nth-of-type(5) h4 {
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+}
+
+section:nth-of-type(5) li img {
     width: 85%;
     aspect-ratio: 1/1.2;
     order: -1;
 }
 
-section:nth-child(5) li a {
-    display: flex;
-    text-decoration: none;
-    gap: 1.4em;
-    margin: 1.5em 0;
-}
+/*********************/
+/* styling section 5 */
+/*********************/
 
-section:nth-child(6) {
+section:nth-of-type(6) {
     background-color: var(--color-background);
     padding: 1em;
+    overflow: hidden;
 }
 
-section:nth-child(6) h2 {
+section:nth-of-type(6) h2 {
     font-size: 35px;
-    color: var(--color-accent);
     font-weight: 200;
+    color: var(--color-accent);
     text-align: center;
+    
     border: none;
     padding: 2.5em 0 1em;
 }
 
-section:nth-child(6) li {
+/* styling carrousel */
+section:nth-of-type(6) ul li {
     background-color: var(--color-white);
     border: 2px solid var(--color-text);
+    
     padding: 5em 1em;
 
     display: grid;
@@ -350,65 +359,182 @@ section:nth-child(6) li {
     justify-items: center;
 }
 
-section:nth-child(6) p {
+section:nth-of-type(6) p {
     color: var(--color-text);
-}
-
-section:nth-child(6) p:nth-child(1) {
-    font-size: 30px;
-    line-height: 0.9999;
-    font-weight: 700;
     text-align: center;
 }
 
-section:nth-child(6) p:nth-child(2) {
+section:nth-of-type(6) p:nth-of-type(1) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 0.9999;
+}
+
+section:nth-of-type(6) p:nth-of-type(2) {
     color: var(--color-accent);
-    text-transform: uppercase;
     font-weight: 400;
+    text-transform: uppercase;
+
     margin-top: 1em;
 }
 
-section:nth-child(6) button {
+/* styling buttons */
+section:nth-of-type(6) div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section:nth-of-type(6) button {
     border: none;
     background-color: var(--color-background);
-    color: var(--color-text);
+    fill: none;
+
+    width: 4em;
+    margin: 2em 0;
 }
 
-section:nth-child(6) button svg {
-    width: 5em;
-}
-
-section:nth-child(6) button:nth-of-type(1) svg {
+section:nth-child(6) button:first-of-type svg {
     rotate: 180deg;
 }
 
-section:nth-child(7) {
+/* animatie */
+@keyframes nextCard {
+    0% {
+        left: 150%;
+        top: 40%;
+        rotate: -20deg;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+section:nth-of-type(6) ul {
+    display: grid;
+}
+section:nth-of-type(6) ul li {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+    position: relative;
+    z-index: 0;  
+    left: 110%;  
+}
+
+/* als er op de button wordt geklikt komt de nieuwe card */
+section:nth-of-type(6) ul li.flyIn {
+    animation-name: nextCard;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    
+    z-index: 2;
+    animation-fill-mode: forwards;
+}
+
+/* als er op de button wordt geklikt blijft de bovenste kaart liggen */
+section:nth-of-type(6) li.wait {
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+/*********************/
+/* styling section 6 */
+/*********************/
+
+section:nth-of-type(7) {
     background-color: var(--color-background);
+    
     margin-top: 3em;
     padding: 3em 1em;
 }
 
-section:nth-child(7) article {
-    border-top: 1px solid var(--color-text);
+section:nth-of-type(7) article {
     padding: 2.5em 0;
-    display: grid;
+    border-top: 1px solid var(--color-text);
+
+    display: flex;
+    flex-direction: column;
 }
 
-section:nth-child(7) article h3 {
+section:nth-of-type(7) article h3 {
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-   
+
+    margin: 0.5em 0;
+    order: 3;
 }
 
-section:nth-child(7) article p:nth-child(1) {
-    color: hotpink;
+/* ik moest alles een order geven omdat order:2; op de h3 alleen niet werkte, hier heb ik tijdens de feedback met Bahaa en Thom naar gekeken */
+section:nth-of-type(7)  article img {
+    order: 1
+}
+
+section:nth-of-type(7) article :is( p:first-of-type, time) {
+    color: var(--color-accent);
+    text-transform: uppercase;
     
+    margin: 1em 0.3em 0 0;
+    order: 2;
 }
 
+section:nth-of-type(7)  article  p{
+    order: 4;
+}
 
+section:nth-of-type(7)  article  a {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
 
+    padding: 2em 0;
+    order: 5;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+section:nth-of-type(7)  article  a::after {
+    content: url(../images/arrow-line.svg);
+}
 
+section:nth-of-type(7) > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    
+    display: block;
+    border-top: 1px solid var(--color-text);
+    border-bottom: 1px solid var(--color-text);
+    padding: 1.5em 0;
+}
+
+section:nth-of-type(7) > a::after {
+    content: url(../images/arrow.svg) url(../images/arrow.svg);
+    padding: 0 0.5em;
+}
+
+/*************************/
+/* prefers reduced motion*/
+/*************************/
+
+@media (prefers-reduced-motion) {
+
+    section:nth-of-type(2) img {
+        animation-play-state: paused;
+    }
+
+    /* marquee "stilzetten" */
+    marquee {
+        display: none;
+    }
+    section:nth-of-type(4) > p:last-of-type {
+        display: block;
+    }
+}
