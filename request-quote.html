@@ -30,7 +30,7 @@
 		</nav>
 	</header>
 	<!-- hamburger menu -->
-	<nav>
+	<nav class="header">
 		<ul>
 			<li>
 				<a href="#">our services</a>
@@ -63,9 +63,9 @@
             <h3>02. Informations Personelles</h3>
 
             <form action="">
-                <label for="function">function</label>
-                <select name="" id="">
-                    <option>You are*</option>
+                <label for="function">Function*</label>
+                <select name="" id="" required>
+                    <option>You are</option>
                     <option>Entrepreneur</option>
                     <option>Small and medium-sized business</option>
                     <option>Key account</option>
@@ -76,7 +76,7 @@
                     <option>Administration</option>
                 </select>
                 <label for="Company name">Company name*</label>
-                <input type="text" name="Company name*" id="Company name" placeholder="Company name*" required>
+                <input type="text" name="Company name" id="Company name" placeholder="Company name" required>
                 
                 <label for="description project">Project</label>
                 <input type="text" placeholder="Describe your project in a few lines....">
@@ -90,9 +90,7 @@
 				</div>
 				
             </form>
-
         </section>
-
     </main>
     <footer>
 		<nav>
@@ -112,5 +110,4 @@
 	</footer>   
 	<script defer src="scripts/script.js"></script>
 </body>
-
 </html>

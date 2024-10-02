@@ -13,7 +13,7 @@ section:nth-of-type(2) {
 }
 
 section:nth-of-type(2) :is(h2, h2 span) {
-    font-size: 38px;
+    font-size: 10vw;
     font-weight: 200;
     line-height: 0.99999;
     text-transform: none;
@@ -116,7 +116,7 @@ section:nth-of-type(2) a:active::after {
 }
 
 section:nth-of-type(2) > img {
-    width: 23%;
+    width: 22%;
     aspect-ratio: 1/1.2;
     
     position: absolute;
@@ -152,9 +152,18 @@ section:nth-of-type(2) img:nth-of-type(4) {
     animation-delay: 4s;
 }
 
-/****************/
+/* responsive */
+@media (min-width: 1200px) {
+    section:nth-of-type(2) ul {
+        position: absolute;
+        top: 8em;
+        right: 10em;
+    }
+}
+
+/*********************/
 /* styling section 2 */
-/****************/
+/*********************/
 
 section:nth-of-type(3) {
     padding: 1em;
@@ -247,6 +256,10 @@ section:nth-of-type(4) > ul li > p {
     font-weight: 700;
 }
 
+section:nth-of-type(4) > ul li > ul {
+    flex-grow: 1;
+}
+
 section:nth-of-type(4) > ul li > ul > li {
     font-size: 12px;
     font-weight: 400;
@@ -296,6 +309,14 @@ section:nth-of-type(4) p:last-of-type {
     display: none;
 }
 
+/* responsive */
+@media (min-width: 500px) {
+    section:nth-of-type(4) > ul > li{
+        flex-basis:25em;
+        height: 30em; 
+    }
+}
+
 /*********************/
 /* styling section 4 */
 /*********************/
@@ -306,6 +327,16 @@ section:nth-of-type(5) {
 
 section:nth-of-type(5) ul {
     margin: 4em 0;
+}
+
+section:nth-of-type(5) ul li {
+    opacity: 0;
+    transition-duration: 1s;
+    transition-delay: .2s;
+}
+
+section:nth-of-type(5) ul li.inbeeld {
+    opacity: 1;
 }
 
 section:nth-of-type(5) ul li a {
@@ -471,7 +502,15 @@ section:nth-of-type(7) article h3 {
 
 /* ik moest alles een order geven omdat order:2; op de h3 alleen niet werkte, hier heb ik tijdens de feedback met Bahaa en Thom naar gekeken */
 section:nth-of-type(7)  article img {
-    order: 1
+    order: 1;
+
+    opacity: 0.5;
+    transition-duration: 0.5s;
+    transition-delay: .2s;
+}
+
+section:nth-of-type(7)  article img.inbeeld {
+    opacity: 1;
 }
 
 section:nth-of-type(7) article :is( p:first-of-type, time) {

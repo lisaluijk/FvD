@@ -12,24 +12,23 @@ section:nth-of-type(1) h2 {
     font-size: 25px;
     font-weight: 200;
     
+    border: none;
+    background-color: var(--color-background-trans);
+    
     position: absolute;
     inset: 0;
     
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-background-trans);
-    border: none;
 }
 
 section:nth-of-type(1) > p {
-    text-transform: uppercase;
     font-weight: 400;
-    margin: 0.5em 0;
+    text-transform: uppercase;
     text-align: center;
+
+    margin: 0.5em 0;
 }
 
 section:nth-of-type(2) {
@@ -38,20 +37,24 @@ section:nth-of-type(2) {
 
 section:nth-of-type(2) h3 {
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: 400;
-    margin: 1em 0;
+    text-transform: uppercase;
     text-align: center;
+
+    margin: 1em 0;
+    opacity: 1;
 }
 
 section:nth-of-type(2) h3:first-of-type {
     border-top: 1px solid var(--color-text);
+
     padding-top: 1.5em;
     margin-top: 3em;
 }
 
 section:nth-of-type(2) h3:last-of-type {
     border-bottom: 1px solid var(--color-text);
+
     padding-bottom: 1.5em;
     margin-bottom: 3em;
     opacity: 0.5;
@@ -68,15 +71,17 @@ section:nth-of-type(2) form label {
 }
 
 section:nth-of-type(2) form input, form select {
-    width: 100%;
-    border: none;
+    font-size: 15px;
+    color: var(--color-text);
+    text-transform: uppercase;
+    
     background-color: var(--color-background);
+    border: none;
+    
+    width: 100%;
     margin: 0.25em 0 1.5em;
     padding: 1.75em 2em;
 
-    text-transform: uppercase;
-    font-size: 15px;
-    color: var(--color-text);
 }
 
 section:nth-of-type(2) form input::placeholder {
@@ -100,19 +105,20 @@ section:nth-of-type(2) form input:focus, form select:focus, textarea:focus {
 
 section:nth-of-type(2) form > input:last-of-type {
     background-image: url("../images/file-icon.svg");
+    background-size: 2em;
+    background-repeat: no-repeat;
+    background-position: right;
 }
-
 
 /* stylen button */
 section:nth-of-type(2) div { 
     display: grid;
-    
 }
 
-section:nth-of-type(2)  div input, section:nth-of-type(2) span {
-    text-transform: uppercase;
+section:nth-of-type(2) :is(div input, span) {
 	font-size:12px;
     color: var(--color-accent);
+    text-transform: uppercase;
     
     background-color:var(--color-white);
     border: 1.5px solid var(--color-accent);
@@ -120,16 +126,14 @@ section:nth-of-type(2)  div input, section:nth-of-type(2) span {
     width: 11.5em;
     height: 9em;
     
-    z-index: 0;
-
     grid-row-start: 1;
     grid-column-start: 1;
+    z-index: 0;
     transition: 0.5s;
 }
 
 section:nth-of-type(2) div span:first-of-type {
     rotate: 4deg;
-
 }
 
 section:nth-of-type(2) div span:last-of-type {

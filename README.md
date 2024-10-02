@@ -196,20 +196,20 @@ Uit de wcag checklist kwamen de volgende punten:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/krakterestiek1.png" width="375px" alt="header met bewegende images">
+  <img src="readme-images/karakterestiek2.png" width="375px" alt="unieke carrousel">
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  Wat hierboven bij karakteristiek staat ging al erg goed en benk ik erg trots op, mar ook het menu, het was even uitvogelen maar uiteindelijk ben ik trots op het resultaat. 
+  <img src="readme-images/goed-menu.png" width="375px" alt="top">
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
+  Hoewel het me is gelukt de carrousel deels te maken is het me niet gelukt een terugknop werkend te krijgen. DIt omdat ik met verschillende states werk en het te veel tijd kost dit uit te vogelen.
+   <img src="readme-images/karakterestiek2.png" width="375px" alt="bummer">
 
 
 ## Bronnenlijst
@@ -220,8 +220,7 @@ Uit de wcag checklist kwamen de volgende punten:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+  1. bron 1, animatie scrollen : https://codepen.io/Nienke-the-styleful/pen/zYgYomN 
+  2. bron 2, carrousel 1 : https://codepen.io/teun-dames/pen/MWNWJro 
+  3. bron 3, menu : https://codepen.io/lisa_luijk/pen/OJeGJxE
 </details>
