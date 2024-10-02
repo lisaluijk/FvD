@@ -1,17 +1,6 @@
 # Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
-
-
 
 ## Jij
-
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
@@ -26,11 +15,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
-
-
 ## Je website
-
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
@@ -73,15 +58,10 @@ Uit de wcag checklist kwamen de volgende punten:
 - alt tekst moet heel veel beter want die ontbreekt
 - prefers-reduced-motion werkt helemaal niet
 - contrast is bijna overal goed
-
-  
-
 </details>
 
 
-
 ## Breakdownschets (week 1)
-
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
@@ -93,24 +73,12 @@ Uit de wcag checklist kwamen de volgende punten:
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/menu.jpg" width="375px" alt="breakdown van het menu">
   <img src="readme-images/breakdownschets-secties.jpg" width="375px" alt="breakdown van html onderdelen">
-
-<!--   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
-
 </details>
 
 
-
-
-
 ## Voortgang 1 (week 2)
-
 <details>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -132,43 +100,37 @@ Uit de wcag checklist kwamen de volgende punten:
   - punt 2: foto van logo --> mag met img maar dan lege alt of met before (doe het wel consistent)
   - punt 3: hoe maak ik de bewegende tekst? --> bewegende tekst met marquee, maar dan met display block enzo en reduces motion
  
-
-
   <img src="readme-images/aantekeningen-hoorcollege.jpg" width="375px" alt="aantekeningen hoorcollege toegankelijkheid">
 </details>
 
 
-
-
-
 ## Voortgang 2 (week 3)
-
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  student koen      
+   -html doornemen
+   - responsive maken articles
+   - carrousel 
+
+  student Lisa
+  -  html doornemen
+  - nog even kijken naar menu
+  - header welke soort foto voor het logo?
+  - carrousel image
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1: margin -> negatief
+  - punt 1: marquee margin -> negatief
   - punt 2: background image svg -> aparte file aanmaken
   - nog een punt : discover in de article -> link maken en dan met java alles klikbaar maken
   - html controleren -> alle sections moeten een h2 hebben, de ul van de nav mag tussen de header en main in, veel van mijn articles zijn geen articles (alleen dingen die los kunnen staan zijn articles)
-  
-- ...
 
 </details>
 
@@ -184,29 +146,39 @@ Uit de wcag checklist kwamen de volgende punten:
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  Het is al een stuk beter dan de orginele site, vooral in html -> kopjes, links, arialabels
+
+  Ik kreeg van Teun een paar tips die ik zo veel mogelik heb verbeterd:
+  - ipv pagina naam escadrille homepage -> home escadrille, dan staat de belagntijkste informatie vooraan
+  - misschien nog de focus styling aanpassen
+  - het menu glitcht op telefoon als je de orientatie aanpast
+
+
+  <img src="readme-images/2wcag-1.jpg" width="375px" alt="ingevulde wcag test">
+  <img src="readme-images/2wcag-2.jpg" width="375px" alt="ingevulde wcag test">
+  <img src="readme-images/2wcag-3.jpg" width="375px" alt="ingevulde wcag test">
+  <img src="readme-images/2wcag-4.jpg" width="375px" alt="ingevulde wcag test">
+  <img src="readme-images/2wcag-5.jpg" width="375px" alt="ingevulde wcag test">
+
 </details>
-
-
-
-
 
 ## Voortgang 3 (week 4)
 
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  student koen      
+   - javascript menu kapot
+  
+  student Sol
+  - font downloaden
+
+  student Lisa
+  -  order nieuwsartikelen
+  - hoe de tweede carrousel maken?
 
 
   ### Verslag van meeting
@@ -216,15 +188,10 @@ Uit de wcag checklist kwamen de volgende punten:
   - punt 2 -> order, snappen student assistenten ook niet
   - punt 3 -> html checken, geen styling in svg, geen lege alt (of toch wel?) 
   - ...
-
 </details>
 
 
-
-
-
 ## Eindgesprek (week 5)
-
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
@@ -245,11 +212,7 @@ Uit de wcag checklist kwamen de volgende punten:
 </details>
 
 
-
-
-
 ## Bronnenlijst
-
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
