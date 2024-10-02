@@ -223,4 +223,5 @@ Uit de wcag checklist kwamen de volgende punten:
   1. bron 1, animatie scrollen : https://codepen.io/Nienke-the-styleful/pen/zYgYomN 
   2. bron 2, carrousel 1 : https://codepen.io/teun-dames/pen/MWNWJro 
   3. bron 3, menu : https://codepen.io/lisa_luijk/pen/OJeGJxE
+  4. bron 4, animatie op scroll : https://tympanus.net/codrops/2024/01/17/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view/
 </details>

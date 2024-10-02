@@ -93,4 +93,3 @@ li.forEach((li) => {
 img.forEach((img) => {
   observer.observe(img);
 });
-
